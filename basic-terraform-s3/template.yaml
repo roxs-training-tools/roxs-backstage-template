@@ -42,14 +42,13 @@ spec:
             - 'US East 1'
             - 'US West 1'
         team:
-          title: Team Name
+          title: Owner 
           type: string
-          description: Team name that will own this project
-          enum:
-            - naranjax
-            - cloud
-            - network
-            - security
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - Group
         description:
           title: Resource Description
           type: string
@@ -68,14 +67,6 @@ spec:
             allowedHosts:
               - github.com
 
-  # Re-include under ui:options: if we want to specify allowedOwners
-  # allowedOwners:
-  # - example_org_1
-  # - example_user_1
-  # - example_project_1
-
-  # These steps are executed in the scaffolder backend, using data that we gathered
-  # via the parameters above.
   steps:
     # Each step executes an action, in this case one templates files into the working directory.
     - id: fetch-base
