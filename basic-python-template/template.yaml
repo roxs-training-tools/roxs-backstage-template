@@ -4,7 +4,7 @@ kind: Template
 metadata:
   name: basic-python-template
   title: Example Python Template
-  description: An example template for the scaffolder that creates a simple Python service
+  description: Create a new Python Repo
   tags:
     - python
     - awscommunity

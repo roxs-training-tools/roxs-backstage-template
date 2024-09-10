@@ -4,7 +4,7 @@ kind: Template
 metadata:
   name: terraform-template
   title: Example Terraform Template
-  description: An example template for the scaffolder that creates a simple Terraform repo
+  description: Create a simple Terraform repo
   tags:
     - terraform
     - awscommunity
