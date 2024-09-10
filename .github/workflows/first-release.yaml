@@ -19,6 +19,8 @@ jobs:
     with:
       tag: ${{ needs.env.outputs.tag }}
       repository: ${{ needs.env.outputs.repository }}
+      url: https://${{ needs.env.outputs.repository }}.roxs.dev
+      environment: production
     needs:
       - env
 
@@ -28,6 +30,8 @@ jobs:
     with:
       tag: ${{ needs.env.outputs.tag }}
       repository: ${{ needs.env.outputs.repository }}
+      url: https://${{ needs.env.outputs.repository }}.roxs.dev
+      environment: production
     needs:
       - env
       - build
