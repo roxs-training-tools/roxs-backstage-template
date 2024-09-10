@@ -1,2 +1,2 @@
-# roxs-backstage-template
-by Roxs
+# ${{values.component_id}}
+## ${{values.description}}
